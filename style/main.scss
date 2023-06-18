@@ -1,0 +1,933 @@
+@font-face {
+    font-family: 'Inter', sans-serif;
+    src: url("../fonts/inter/Inter-VariableFont_slnt\,wght.ttf");
+}
+@font-face {
+    font-family: 'DM Sans', sans-serif;
+    src: url("../fonts/dm/DMSans-Bold.ttf");
+    src: url("../fonts/dm/DMSans-BoldItalic.ttf");
+    src: url("../fonts/dm/DMSans-Italic.ttf");
+    src: url("../fonts/dm/DMSans-Medium.ttf");
+    src: url("../fonts/dm/DMSans-MediumItalic.ttf");
+    src: url("../fonts/dm/DMSans-Regular.ttf");
+}
+@font-face {
+    font-family: 'Caladea', serif;
+    src: url("../fonts/Caladea/Caladea-Bold.ttf");
+    src: url("../fonts/Caladea/Caladea-BoldItalic.ttf");
+    src: url("../fonts/Caladea/Caladea-Italic.ttf");
+    src: url("../fonts/Caladea/Caladea-Regular.ttf");
+}
+
+// varebles
+$bgOPSTY:#5359618f;
+$bgcolor:#1d0c41;
+$black:black;
+$color:white;
+$txtcolor: #BDA0FF;
+$buttoncolor: #BDA0FF;
+$BGLIGHTCOLOR:#381D74;
+$linecolor:rgb(103, 103, 103);
+$blueTxt:#D9ECFF;
+
+
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    color: $color;
+    user-select: none;
+    transition: all 0.7s;
+    scroll-behavior: smooth;
+}
+
+
+
+// functions
+
+@mixin df{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    // border-radius:
+    background: $buttoncolor;
+    border-radius: 48px;
+    color: $color;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+}
+button:hover{
+    box-shadow: 0 0 10px 10px greenyellow;
+}
+button:active{
+    box-shadow: 0 0 10px 10px rgb(47, 255, 50);
+}
+input:hover{
+    box-shadow: 0 0 5px 5px rgb(47, 255, 50);
+
+}
+
+
+
+
+
+// all option
+
+section{
+    @include df();
+    background: $bgcolor;
+}
+.container{
+    width: 1614px;
+}
+
+
+
+// white dots
+.div{
+    position: relative;
+}
+.rom{
+    position: absolute;
+    width: 82px;
+    height: 211px;
+    left: 474px;
+    top: -87px; 
+}
+.homebg{
+    position: absolute;
+    left: 0%;
+    right: 90.59%;
+    top: 4.72%;
+    bottom: 93.3%;
+}
+.homebg2{
+    position: absolute;
+    left: 96.2%;
+    right: 1.55%;
+    top: 7.91%;
+    bottom: 96.43%;
+}
+.mostpop{
+    position: absolute;
+    width: 485px;
+    height: 244px;
+    left: -66px;
+    top: 3049px;
+}
+.bg1{
+    position: absolute;
+    width: 426px;
+    height: 426px;
+    left: -78px;
+    top: -126px;
+    background: rgba(61, 92, 255, 0.2);
+    filter: blur(150px);
+}
+.bg2{
+    position: absolute;
+    width: 602px;
+    height: 602px;
+    left: 1511px;
+    top: 133px;
+    background: rgba(61, 92, 255, 0.2);
+    filter: blur(150px);
+}
+.bg3{
+    position: absolute;
+    width: 409px;
+    height: 409px;
+    left: 153px;
+    top: 902px;
+    background: rgba(61, 92, 255, 0.2);
+    filter: blur(150px);
+}
+.bg4{
+    position: absolute;
+    width: 694px;
+    height: 694px;
+    left: 1506px;
+    top: 2641px;
+    background: rgba(61, 92, 255, 0.2);
+    filter: blur(150px);
+}
+.bg5{
+    position: absolute;
+    width: 694px;
+    height: 694px;
+    left: -303px;
+    top: 3988px;
+    background: rgba(61, 92, 255, 0.2);
+    filter: blur(150px);
+}
+.bg6{
+    position: absolute;
+    width: 694px;
+    height: 694px;
+    left: 1522px;
+    top: 4802px;
+    background: rgba(61, 92, 255, 0.2);
+    filter: blur(150px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//------------------------------- main options-------------------------------
+//------------------------------- NAV start-------------------------------
+.nav{
+    .container{
+        width: 1750px;
+        height: 30px;
+        padding: 41px  0;
+        @include df();
+        overflow: hidden;
+        justify-content: space-between;
+        .logo{
+            img{
+                transform: translateY(15px);
+            }
+            @include df();
+        }
+
+
+        .menu{
+            transform: translateX(140px);
+            @include df();
+            justify-content: space-between;
+            li{
+                list-style: none;
+                margin: 0 15px 0 15px;
+                a{
+                    font-family: 'DM Sans';
+                    font-style: normal;
+                    text-decoration: none;
+                    font-weight: 500;
+                    font-size: 22px;
+                    line-height: 24px;
+                }
+            }
+        }
+
+        .register{
+            display: flex;
+            margin: 0 15px 0 15px;
+            button{
+                width: 176px;
+                height: 63px;
+                border: none;
+                border-radius: 38px;
+                &:nth-child(1){
+                    background: $bgcolor;
+                    border: 1px solid $color;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 28px;
+                    margin-right: 30px;
+                }
+            }
+        }
+    }
+}
+// -------------------------------NAV stop-------------------------------
+
+//------------------------------- Home start------------------------------
+.home{
+    .container{
+        .top{
+            @include df();
+            .txtHome{
+                width: 986px;
+                h1{
+                    margin-top: 56px;
+                    font-family: 'Caladea';
+                    font-weight: 700;
+                    font-size: 100px;
+                    line-height: 110px;
+                    p{
+                        display: inline-block;
+                        font-family: 'Caladea';
+                        color: $buttoncolor;
+                        font-weight: 700;
+                        font-size: 100px;
+                        line-height: 110px;
+                    }
+                    img{
+                        margin-left: 70px;
+                    }
+                }
+                span{
+                    margin-top: 60px;
+                    display: inline-block;
+                    width: 740px;
+                    font-weight: 500;
+                    font-size: 25px;
+                    line-height: 40px;
+                }
+                .input{
+                    margin-top: 60px;
+                    position: relative;
+                    z-index: 1;
+                    input{
+                        width: 986px;
+                        height: 99px;
+                        padding: 38px 221px 38px 83px;
+                        background: $color;
+                        border-radius: 50px;
+                        position: relative;
+                        color: $black;
+                    }
+                    img{
+                        background-color: $color;
+                        position: absolute;
+                        top: 34px;
+                        left: 29px;
+                    }
+                    .beforeBTN{
+                        position: absolute;
+                        right: 17px;
+                        top: 13px;
+                        width: 174px;
+                        height: 76px;
+                    }
+                }
+            }
+    
+            .mainImg{
+                width: 628px;
+                position: relative;
+                z-index: 0;
+                img{
+                    position: absolute;
+                    top: -280px;
+                    right: 40px;
+                    z-index: 3;
+                }
+                .e3{
+                    z-index: 2;
+                }
+    
+            }
+    
+        }
+        fieldset{
+            margin: 140px 0 168px 0;
+            padding: 67px;
+            width: 100%;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 40px;
+            border-radius: 15px;
+            marquee{
+                img{
+                    margin: 0  40px 0 40px;
+                }
+            }
+        }
+
+    }
+}
+// -------------------------------Home stop-------------------------------
+
+//------------------------------- Popular courses start------------------------------
+.popularCources{
+    .container{
+        .naigation{
+            margin-bottom: 110px;
+            @include df();
+            justify-content: space-between;
+            ul{
+                padding: 15px;
+                @include df();
+                justify-content: space-evenly;
+                background-color: $bgOPSTY;
+                border-radius: 50px;
+                width: 899px;
+                height: 99px;
+                gap: 15px;
+                li{
+                    list-style:none;
+                    border-radius: 50px;
+                    width: 174px;
+                    height: 76px;
+                    @include df();
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 28px;
+                    &:hover{
+                        background: $buttoncolor;
+                    }
+                }
+            }
+        }
+        .allCardInf0{
+            @include df();
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .allcard{
+                margin-top: 20px;
+                @include df();
+                background: $BGLIGHTCOLOR;
+                border-radius: 30px;
+                width: 520px;
+                &:hover{
+                    box-shadow: 0 0 10px 20px green;
+                }
+                img{
+                    border-radius: 30px 30px 0 0;
+                }
+                .divPlay{
+                    padding: 20px;
+                    @include df();
+                    justify-content: space-between;
+                    div{
+                        @include df();
+                        div{
+                            margin-right: 24px;
+                            @include df();
+                            width: 28px;
+                            height: 28px;
+                            border-radius: 50%;
+                            background: $buttoncolor;
+                        }
+                    }
+                    button{
+                        border: none;
+                        background: $bgOPSTY;
+                        width: 105px;
+                        height: 35px;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 18px;
+                        &:hover,&:active{
+                            box-shadow: 0 0 2px 2px;
+                        }
+                    }
+                }
+                h1{
+                    padding: 20px;
+                    font-weight: 700;
+                    font-size: 30px;
+                    line-height: 40px;
+                }
+                
+                .PersoneDiv{
+                    padding: 20px;
+                    .w2{
+                        @include df();
+                        justify-content: space-between;
+                        border-top: 0.5px solid $linecolor;
+                        border-bottom: 0.5px solid $linecolor;
+                        img{
+                            margin: 31px;
+                        }
+                        span{
+                            transform: translateY(-35px);
+                            display: inline-block;
+                            font-weight: 4;
+                            font-size: 18px;
+                            line-height: 25px;
+                        }
+                    }
+                    p{
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 18px;
+                        padding: 31px;
+                        border-left: 1px solid $linecolor;
+                    }
+
+                }
+                .starDiv{
+                    @include df();
+                    justify-content: space-between;
+                    padding: 15px 50px 40px 20px;
+                }
+            }
+        }
+        .btnn{
+            border: none;
+            margin-top: 91px;
+            transform: translateX(670px);
+            width: 273px;
+            height: 63px
+        }
+    }
+}
+
+
+// -------------------------------Popular courses stop-------------------------------
+
+//------------------------------- Most Popular Category  start------------------------------
+.MostPopular{
+    .container{
+        h1{
+            margin-top: 154px;
+            text-align: center;
+            font-family: 'Caladea', serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 70px;
+            line-height: 70px; 
+            t{
+                color: $txtcolor
+            }
+            
+        }
+        .w3{
+            margin: 129px 0 137px 0;
+            @include df();
+            flex-wrap: wrap;
+            justify-content: space-between;
+            div{
+                padding: 20px;
+                margin-top: 47px;
+                border-radius: 15px;
+                border: 1px solid $linecolor;
+                width: 380px;
+                height: 80px;
+                display: flex;
+                align-items: center;
+                justify-content: start;
+                &:hover{
+                    box-shadow: 0 0 10px 20px green;
+                }
+                img{
+                    width: 33px;
+                    height: 33px;
+                }
+                .p{
+                    width: 400px;
+                    margin-left: 10px;
+                    font-weight: 500;
+                    font-size: 22px;
+                    line-height: 22px;
+                }
+                button{
+                    
+                    border: none;
+                    background: $txtcolor;
+                }
+            }
+        }
+    }
+}
+// -------------------------------Most Popular Category  stop-------------------------------
+
+//------------------------------- Difference start------------------------------
+.difference{
+    padding: 108px 0 55px;
+    backdrop-filter: $bgcolor;
+    opacity: 0.9;
+    .staR{
+        position: absolute;
+        right: 140px;
+        transform: translateY(-450px);
+    }
+    .container{
+        @include df(); 
+        justify-content: space-evenly;
+        img{
+            width: 605px;
+        }
+        .txtDifer{
+            width: 872px;
+            p{
+                font-family: 'Caladea';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 70px;
+                line-height: 80px;
+                t{
+                    color: $txtcolor;
+                    font-family: 'Caladea';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 70px;
+                    line-height: 80px;
+                }
+            }
+            span{
+                display: inline-block;
+                margin-top: 62px;
+                font-weight: 500;
+                font-size: 22px;
+                line-height: 40px;
+            }
+            .dic3{
+                margin-top: 80px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .e5{
+                    @include df();
+                    .pic{
+                        margin: 0;
+                        @include df();
+                        border-radius: 50%;
+                        background: $txtcolor;
+                        width: 84px;
+                        height: 84px;
+                        &:hover{
+                            background: $buttoncolor;
+                            box-shadow: 0 0 20px 20px green;
+                        }
+                        &:active{
+                            background: $buttoncolor;
+                            box-shadow: 0 0 20px 20px rgb(255, 0, 0);
+                        }
+                        img{
+                            width: 44px;
+                            height: 44px;
+                        }
+                    }
+                    .w3{
+                        display: flex;
+                        flex-direction: column;
+                        margin-left: 20px;
+                        p{
+                            text-align: left;
+                            font-family: 'Caladea';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 32px;
+                            line-height: 40px;
+                        }
+                        
+                        span{
+                            margin-top: 10px;
+                            text-align: left;
+                            font-weight: 400;
+                            font-size: 20px;
+                            line-height: 28px; 
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// -------------------------------Difference stop-------------------------------
+
+//------------------------------- Testimonials start------------------------------
+.testmoils{
+    .container{
+        @include df();
+        flex-direction: column;
+        position: relative;
+        h1{
+            text-align: center;
+            font-family: 'Caladea';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 70px;
+            line-height: 70px;
+            margin: 151px 0 156px 0;
+        }
+        .TMoil1{
+            position: absolute;
+            left: 300px;
+            top: 210px;
+        }
+        .TMoil2{
+            position: absolute;
+            left: 20px;
+            top: 410px;
+        }
+        .TMoil3{
+            position: absolute;
+            left: 90px;
+            top: 780px;
+        }
+        .TMoil4{
+            position: absolute;
+            right: 190px;
+            top: 120px;
+        }
+        .TMoil5{
+            position: absolute;
+            right: 30px;
+            top: 520px;
+        }
+        .TMoil6{
+            position: absolute;
+            right: 160px;
+            top: 820px;
+        }
+        .bar{
+            &:hover{
+                box-shadow: 0 0 10px 20px green;
+            }
+            width: 1045px;
+            border-radius: 30px;
+            background: #381D74;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            padding: 50px;
+            margin-bottom: 158px;
+            
+            .moils{
+                @include df();
+                justify-content: space-between;
+                padding: 5px 0 34px 0;
+                border-bottom: 1px solid $blueTxt; 
+                .persone{
+                    @include df();
+                    div{
+                        margin-left: 10px;
+                        p{
+                            color: $blueTxt;
+                            font-weight: 600;
+                            font-size: 18px;
+                            line-height: 18px;
+                        }
+                        span{
+                            margin: 0;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 18px;
+                        }
+                    }
+                }
+            }
+            span{
+                display: inline-block;
+                margin-top: 40px;
+                color: $blueTxt;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 32px;
+            }
+            .moilFooter{
+                margin-top: 40px;
+                @include df();
+                justify-content: flex-end;
+                img{
+                    &:hover{
+                        border-radius: 50%;
+                        background: rgb(109, 128, 0);
+                        box-shadow: 0 0 5px 5px rgb(128, 126, 0);
+                    }
+                    margin-right: 10px;
+                }
+            }
+            
+        }
+    }
+}
+// -------------------------------Testimonials stop-------------------------------
+//------------------------------- joinOur start------------------------------
+.joinOur{
+    opacity: 0.9;
+    .container{
+        @include df();
+        .lft{
+            transform: translateX(-100px);
+        }
+        .allSec{
+            padding: 102px 0 102px 0;
+            @include df();
+            width: 1350px;
+            .fortxt{
+                width: 65%;
+                h1{
+                    font-family: 'Caladea';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 70px;
+                    line-height: 80px;
+                    t{
+                        display: inline-block;
+                        font-family: 'Caladea';
+                        font-style: normal;
+                        color: $txtcolor;
+                    } 
+                }
+                span{
+                    display: inline-block;
+                    margin-top: 60px;
+                    font-weight: 400;
+                    font-size: 24px;
+                    line-height: 32px;
+                }
+            }
+            
+            .forbtn{
+                @include df();
+                flex-direction: column;
+                width: 35%;
+                button{
+                    border: none;
+                    font-family: 'Caladea';
+                    font-style: normal;
+                    font-size: 22px;
+                    line-height: 22px;
+                    width: 380px;
+                    height: 80px;
+                    background: #FF5156;
+                    border-radius: 48px;
+                    &:nth-last-child(1){
+                        margin-top: 47px;
+                        background: $buttoncolor;
+                    }
+                }
+            }
+        }
+        .rght{
+            transform: translateX(100px);
+        }
+    }
+}
+// -------------------------------joinOur stop-------------------------------
+// -------------------------------Footer start-------------------------------
+.footer{
+    display: flex;
+    flex-direction: column;
+    .container{
+        margin: 110px 0 123px;
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+        span{
+            color: #B0B0D1;
+        }
+        .edujar{
+            width: 408px;
+            
+            .h1{
+                transform: translateX(-40px);
+                display: flex;
+                p{
+                    margin-top: 25px;
+                    font-family: 'Caladea';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 48px;
+                    line-height: 40px;
+                    color: #D9ECFF;
+
+                }
+            }
+
+            span{
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 28px;
+            }
+        }
+
+        .quicklinks{
+            width: 194px;
+            .h1{
+                font-family: 'Caladea';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 25px;
+                line-height: 24px;
+                margin-bottom: 50px;
+            }
+            .spans{
+                margin-top: 95px;
+                display: flex;
+                .span{
+                    gap: 30px;
+                    display: flex;
+                    flex-direction: column;
+                }
+                .span1{
+                    margin-left: 63px;
+                    gap: 30px;
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+
+        .ContactUs{
+            width: 654px;
+            .h1{
+                margin-bottom: 50px;
+                font-family: 'Caladea';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 25px;
+                line-height: 24px;
+            }
+            .spans{
+                display: flex;
+                .iconSpan{
+                    display: flex;
+                    flex-direction: column;
+                    span{
+                        margin-top: 40px;
+                    }
+                }
+                .iconSpan1{
+                    margin: 0 0 0 30px;
+                    display: flex;
+                    flex-direction: column;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 18px;
+                    color: #B0B0D1;
+                    span{
+                        margin-top: 40px;
+                    }
+                }
+                
+                .endDiv{
+                    display: flex;
+                    margin-top: 40px;
+                    margin-left: 40px;
+                    img{
+                        margin-right: 30px;
+                    }
+                    .span{
+                        display: inline-block;
+                        width: 265px;
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 25px;   
+                        color: #B0B0D1; 
+                    }
+                }
+            }
+        }
+    }
+    .container1{
+        padding: 45px 0;
+        border-top: 1px solid #B0B0D1;
+        width: 1614px;
+        display: flex;
+        justify-content: space-between;
+        .img{
+            display: flex;
+            gap: 33px;
+            img{
+            &:hover{
+                background-color: rgb(47, 255, 50);
+                border-radius: 50%;
+                box-shadow: 0 0 5px 5px rgb(47, 255, 50);
+            }
+            }
+        }
+    }
+}
+// -------------------------------Footer stop-------------------------------
